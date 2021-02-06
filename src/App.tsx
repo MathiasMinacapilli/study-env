@@ -2,14 +2,17 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
+// Components
+import Navbar from "./shared/components/navbar/navbar";
+
+// Pages
+import HomePage from "./pages/home/HomePage";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Study environment.</p>
-        <p>An environment to power up your study :D</p>
-      </header>
+      <Navbar />
+      <HomePage />
     </div>
   );
 }
