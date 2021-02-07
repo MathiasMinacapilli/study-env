@@ -6,21 +6,41 @@ import {
   Avatar,
   ListItemText,
 } from "@material-ui/core";
-import FolderIcon from "@material-ui/icons/Folder";
+import {
+  ComputerOutlined,
+  MicOutlined,
+  DirectionsRunOutlined,
+} from "@material-ui/icons";
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Área de estudios</h1>
+    <div className="container">
+      <h1>Áreas de estudios</h1>
       <div>
         <List>
           <ListItem>
             <ListItemAvatar>
               <Avatar>
-                <FolderIcon />
+                <ComputerOutlined />
               </Avatar>
             </ListItemAvatar>
-            <ListItemText primary="Single-line item" />
+            <ListItemText primary="Computación" />
+          </ListItem>
+          <ListItem>
+            <ListItemAvatar>
+              <Avatar>
+                <MicOutlined />
+              </Avatar>
+            </ListItemAvatar>
+            <ListItemText primary="Comunicaciones" />
+          </ListItem>
+          <ListItem>
+            <ListItemAvatar>
+              <Avatar>
+                <DirectionsRunOutlined />
+              </Avatar>
+            </ListItemAvatar>
+            <ListItemText primary="Educación Física" />
           </ListItem>
         </List>
       </div>
