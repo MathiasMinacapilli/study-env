@@ -11,7 +11,7 @@ import FolderIcon from "@material-ui/icons/Folder";
 const HomePage = () => {
   return (
     <div>
-      <h1>home page</h1>
+      <h1>Área de estudios</h1>
       <div>
         <List>
           <ListItem>
