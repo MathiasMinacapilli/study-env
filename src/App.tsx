@@ -16,8 +16,8 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" component={HomePage} />
           <Route path="/personal-area" component={PersonalArea} />
+          <Route path="/" component={HomePage} />
         </Switch>
       </Router>
     </div>
