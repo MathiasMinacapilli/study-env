@@ -1,49 +1,31 @@
 import React from "react";
-import {
-  List,
-  ListItem,
-  ListItemAvatar,
-  Avatar,
-  ListItemText,
-} from "@material-ui/core";
+
 import {
   ComputerOutlined,
   MicOutlined,
   DirectionsRunOutlined,
 } from "@material-ui/icons";
+import ListComponent from "../../shared/components/list-component/list-component";
 
 const HomePage = () => {
+  const studyAreaItems = [
+    {
+      name: "Computación",
+      icon: <ComputerOutlined />,
+    },
+    {
+      name: "Comunicaciones",
+      icon: <MicOutlined />,
+    },
+    {
+      name: "Educación Física",
+      icon: <DirectionsRunOutlined />,
+    },
+  ];
   return (
     <div className="container">
       <h1>Áreas de estudios</h1>
-      <div>
-        <List>
-          <ListItem>
-            <ListItemAvatar>
-              <Avatar>
-                <ComputerOutlined />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="Computación" />
-          </ListItem>
-          <ListItem>
-            <ListItemAvatar>
-              <Avatar>
-                <MicOutlined />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="Comunicaciones" />
-          </ListItem>
-          <ListItem>
-            <ListItemAvatar>
-              <Avatar>
-                <DirectionsRunOutlined />
-              </Avatar>
-            </ListItemAvatar>
-            <ListItemText primary="Educación Física" />
-          </ListItem>
-        </List>
-      </div>
+      <ListComponent items={studyAreaItems} />
     </div>
   );
 };
